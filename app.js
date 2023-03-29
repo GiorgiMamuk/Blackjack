@@ -1,4 +1,7 @@
-
+let player = {
+    name:"George",
+    chips:500
+}
 let cards=[]
 let sum=0
 let hasBlackJack=false
@@ -7,10 +10,8 @@ let message=""
 let messageEl=document.querySelector("#message-el")
 let sumEl=document.querySelector("#sum-el")
 let cardsEl=document.querySelector("#cards-el")
-let playerName="George"
-let playerChips=145
 let playerEl=document.getElementById("player-el")
-playerEl.textContent=playerName + ":$" + playerChips
+playerEl.textContent=player.name + ":$" + player.chips
 
 function getRandomCard () {
     let randomNumber=Math.floor(Math.random()*13)+1
